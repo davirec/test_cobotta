@@ -1,0 +1,7 @@
+astroid==3.0.1
+numpy==1.26.1
+opencv-contrib-python==4.8.1.78
+PySide2==5.15.2.1
+robodk==5.6.4
+shiboken2==5.15.2.1
+typing_extensions==4.8.0
