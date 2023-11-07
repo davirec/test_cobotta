@@ -6,6 +6,7 @@ import time
 class Cobotta:
 
     def __init__(self):
+        """Connects to the robot and initializes with the smartphone reference points"""
         # smartphone
         self.resolution = [1920, 1080]
         self.smartphone = [165, 76, 10]
@@ -47,6 +48,7 @@ class Cobotta:
         self.robot.setSpeed(200)  # Set linear speed in mm/s
 
     def config_coord_device(self):
+        """Configure smartphone reference points according to screen size."""
         self.gap = 15
         self.borda_scroll_up_down = 40
         self.borda_scroll_left_right = 10
@@ -192,6 +194,7 @@ class Cobotta:
 
 
 if __name__ == '__main__':
+    """Test the basic implemented commands"""
     robot_cobotta = Cobotta()
     robot_cobotta.touch(0, 165)
     robot_cobotta.double_rotation(0)
